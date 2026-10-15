@@ -1,0 +1,18 @@
+{
+  "name": "playwright-camera-mock",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:local:chrome": "playwright test --project=\"chrome:local\"",
+    "test:local:edge": "playwright test --project=\"edge:local\"",
+    "test:cloud:chrome": "playwright test --project=\"chrome:latest:Windows 11@lambdatest\"",
+    "test:cloud:edge": "playwright test --project=\"MicrosoftEdge:latest:Windows 11@lambdatest\"",
+    "test:lambdatest": "playwright test --project=\"*@lambdatest\""
+  },
+  "devDependencies": {
+    "@playwright/test": "1.53.2",
+    "playwright": "1.53.2",
+    "playwright-core": "1.53.2",
+    "dotenv": "^16.4.5"
+  }
+}
